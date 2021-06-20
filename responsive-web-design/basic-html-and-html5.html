@@ -1,1 +1,144 @@
+<!-- Les balises ouvrantes et fermantes -->
+
 <h1>Hello jrd10 </h1>
+<h2>CatPhotoApp</h2>
+<p>Hello paragraphe</p>
+<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+<!-- Les commentaires -->
+
+
+<!-- Structure your HTML5 page
+main, header, footer, nav, video, article, section -->
+
+<!-- Ajoute une image avec une balise autofermante -->
+<img src="https://www.freecatphotoapp.com/your-image.jpg" title="A business cat wearing a necktie." alt="A business cat wearing a necktie." />
+
+
+<!-- Ajoute lien vers une page externe |  'a' pour 'anchor' 
+'#' : lien mort, en attendant de connaître l'adresse -->
+<a href="https://www.freecodecamp.org" title="Cliquer ici" target="_blank">Le lien</a>
+
+<!-- Ajoute lien interne à une page du même site | # en attendant l'adresse | 'a' pour 'anchor' 
+target="_blank" n'est pas nécessaire 
+Dans la page, créer un attribut 'id="ancre-locale"' pour pointer vers cette ligne
+-->
+
+<a href="#ancre-locale" title="Cliquer ici">Vers l'andre locale</a>
+
+<!-- Il est possible d'intégrer un lien dans un paragraphe -->
+
+<p>Ce paragraphe contient le lien suivant : <a href="https://www.freecodecamp.org" title="Cliquer ici" target="_blank">Le lien</a>. 
+  N'hésitez pas à cliquer dessus !
+</p>
+
+<! Pour transformer une image en lien, il suffit de mettre l'image dans un lien -->
+
+<a href="https://www.freecodecamp.org" title="Cliquer sur l'image" target="_blank">
+  <img src="https://www.freecatphotoapp.com/your-image.jpg" title="A business cat wearing a necktie." alt="A business cat wearing a necktie." /></a>
+
+<hr><hr>
+
+<!-- Les listes : 'u' pour les points, 'o' pour des numéros | Prend la place du paragraphe -->
+
+<ul>
+  <li>Item numéro 1</li>
+  <li>Item numéro 2</li>
+  <li>Item ...</li>
+<ul>  
+
+  
+<ol>
+  <li>Item numéro 1</li>
+  <li>Item numéro 2</li>
+  <li>Item ...</li>
+<ol> 
+  
+<hr><hr>
+<!-- Les formulaires | 'input' suivi du 'type' | La balise input seule réserve l'espace -->
+  
+<input type="text">
+
+<!-- Placeholder : le texte grisé pour information (pas par défaut)
+
+<input type="text" placeholder="this is placeholder text">
+  
+<!-- Création du formulaire lui-même : 'action' (pas de 's') indique la page de traitement du formulaire 
+Pour le 'button', on retrouve le 'type' puis le texte dans le bouton
+Pour rendre l'entrée obligatoire, ajouter 'required' entre les tags 'input'
+-->
+
+<form action="/url-where-you-want-to-submit-form-data" 
+  <input type="text" required>
+  
+  <button type="submit">Soumettre ce formulaire</button>
+  
+</form>      
+
+<!-- les boutons radio | 'label' permet de nommer une 'input'
+ Chaque bouton radio a sa propre étiquette qui doit être la même de l'étiquette (id). En lien direct avec la réponse 
+'name' permet de regrouper un jeu de bouton-radio/case à cocher, ... -->
+
+<label for="indoor">
+
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+  
+</label>  
+  
+<!-- Les checkbox -->
+  
+<label for="loving">
+
+  <input id="loving" type="checkbox" name="personality">Loving
+  
+</label>  
+  
+  
+<form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor">
+      <input id="indoor" type="radio" name="indoor-outdoor"> Indoor
+    </label>
+    <label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+    </label>
+  </form>
+
+<!-- 'value' pour soummettre la valeur de la réponse -->
+
+<form action="#">
+  <label for="indoor">
+    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+  </label>
+  <label for="outdoor">
+    <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+  </label>
+</form>
+
+<!-- Pour proposer une valeur par défaut : 'checked'
+
+<input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" checked>Outdoor
+
+<!-- Déclare the '!DOCTYPE' -->
+  
+<!DOCTYPE html>
+  
+<html>
+
+</html> 
+
+<!-- Structure d'une page HTML 
+
+<html>
+  <head>
+    <meta xxx />
+    <title> xxx </title>
+    <script> xxx </script>
+    <link> </link>
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>
+
+<!-- Fin du chapitre Basic HTML and HTML5
